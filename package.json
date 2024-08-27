@@ -18,7 +18,7 @@
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "eslint": "^9.9.1",
-    "eslint-linter-browserify": "file:../../Dev_etc/eslint-linter-browserify",
+    "eslint-linter-browserify": "git+https://github.com/Helloyunho/eslint-linter-browserify#v9.9.1",
     "eslint-plugin-perfectionist": "^3.2.0",
     "lucide-react": "^0.436.0",
     "memfs": "^4.11.1",
