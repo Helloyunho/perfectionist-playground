@@ -24,7 +24,7 @@ const config = {
       meta: tsParser.meta,
       parseForESLint: tsParser.parseForESLint
     },
-    ecmaVersion: 2020
+    ecmaVersion: 'latest'
   },
   plugins: {
     perfectionist
@@ -49,6 +49,7 @@ export const CodeEditor = () => {
 
   useEffect(() => {
     const delayInputTimeoutId = setTimeout(() => {
+      // @ts-expect-error - config kinda weird
       const result = eslint.verifyAndFix(code, config)
       setfixedCode(result.output)
     }, 500)
